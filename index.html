@@ -1,50 +1,100 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="ta">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="NTDS Batticaloa News - மட்டக்களப்பு செய்திகள்">
-<title>NTDS Batticaloa News</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NTDS Batticaloa News | தமிழ் செய்திகள்</title>
 <style>
-:root{--navy:#102b4e;--blue:#1769aa;--paper:#f4f7fb;--ink:#172334}
-*{box-sizing:border-box}body{margin:0;font-family:system-ui,"Noto Sans Tamil",Arial,sans-serif;background:var(--paper);color:var(--ink);line-height:1.65}
-header{background:linear-gradient(120deg,var(--navy),var(--blue));color:white;padding:22px 16px}.wrap{max-width:1000px;margin:auto;padding:0 16px}
-.brand{display:flex;align-items:center;gap:12px}.logo{width:54px;height:54px;display:grid;place-items:center;border-radius:50%;background:white;color:var(--navy);font-weight:900;border:3px solid #dcecff}
-h1{margin:0;font-size:clamp(1.4rem,4vw,2.2rem);line-height:1.25}.tagline{margin:7px 0 0;color:#e7f1ff}
-nav{background:#0b2039;color:white}nav .wrap{display:flex;flex-wrap:wrap;gap:8px;padding-top:10px;padding-bottom:10px}nav a{color:white;text-decoration:none;padding:6px 10px;border-radius:6px}nav a:hover{background:#244568}
-main{padding:22px 0 40px}.notice{background:#fff4dc;border-left:4px solid #e4a11b;padding:12px 14px;border-radius:7px;margin-bottom:18px}
-.section-title{font-size:1.3rem;margin:0 0 12px;color:var(--navy)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));gap:16px}
-.card{background:white;border-radius:12px;overflow:hidden;box-shadow:0 2px 10px #12294a12;border:1px solid #e4eaf2}.card-body{padding:16px}
-.category{display:inline-block;color:var(--blue);background:#e8f3ff;border-radius:5px;padding:2px 8px;font-size:.83rem;font-weight:700}
-.card h3{margin:9px 0 7px;font-size:1.15rem;line-height:1.45}.meta{color:#687789;font-size:.85rem}
-footer{background:var(--navy);color:#e8f0fa;padding:20px 16px;text-align:center}.btn{display:inline-block;background:var(--blue);color:white;border:0;border-radius:7px;padding:10px 14px;font:inherit;cursor:pointer}
-.btn.secondary{background:#e8eef6;color:var(--navy)}.admin{margin-top:26px;background:white;border:1px solid #dce5ef;border-radius:12px;padding:18px}
-label{display:block;font-weight:700;margin:12px 0 5px}input,textarea,select{width:100%;padding:11px;border:1px solid #bdc9d8;border-radius:7px;font:inherit;background:white}textarea{min-height:120px}
-.admin-note{font-size:.9rem;color:#59697b}.admin-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}@media(max-width:480px){.wrap{padding-left:12px;padding-right:12px}header{padding:18px 0}}
-</style></head>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,"Noto Sans Tamil",sans-serif;background:#f3f6fa;color:#172033}
+header{background:#092d55;color:white;padding:22px 15px;text-align:center}
+.logo{font-size:30px;font-weight:bold;color:#ffd34e}
+header p{margin:8px 0 0}
+nav{background:#0d477d;padding:13px 8px;text-align:center}
+nav a{color:white;text-decoration:none;margin:7px;font-weight:bold;display:inline-block}
+.container{max-width:900px;margin:auto;padding:15px}
+.breaking{background:#ffdf69;padding:12px;border-radius:8px;font-weight:bold}
+h2{color:#0d477d;border-left:5px solid #ef4b43;padding-left:10px}
+.feature{background:white;padding:20px;border-radius:12px;box-shadow:0 2px 10px #0001}
+.feature h3{font-size:23px;color:#092d55}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.card{background:white;padding:16px;border-radius:10px;border:1px solid #e1e7ef}
+.card h3{color:#124d80}
+.tag{color:#d33;font-weight:bold;font-size:13px}
+input{width:100%;padding:13px;border:1px solid #ccd5e0;border-radius:8px;font-size:16px}
+footer{background:#092d55;color:white;text-align:center;padding:22px;margin-top:25px}
+small{color:#65758b}
+</style>
+</head>
 <body>
-<header><div class="wrap brand"><div class="logo">NTDS</div><div><h1>NTDS Batticaloa News</h1><p class="tagline">மட்டக்களப்பின் செய்திகள் — உங்கள் பார்வைக்கு</p></div></div></header>
-<nav><div class="wrap"><a href="#latest">முக்கிய செய்திகள்</a><a href="#local">மட்டக்களப்பு</a><a href="#island">இலங்கை</a><a href="#world">உலகம்</a><a href="#about">எங்களைப் பற்றி</a></div></nav>
-<main class="wrap">
-<div class="notice"><strong>குறிப்பு:</strong> இது ஆரம்ப வடிவமைப்பு. உண்மையான செய்திகளை வெளியிடுவதற்கு முன் தகவல்களைச் சரிபார்த்து, செய்தியின் தேதி மற்றும் மூலத்தைச் சேர்க்கவும்.</div>
-<section id="latest"><h2 class="section-title">📰 சமீபத்திய செய்திகள்</h2><div class="grid" id="news-list">
-<article class="card"><div class="card-body"><span class="category">வரவேற்பு</span><h3>NTDS Batticaloa News இணையதளத்திற்கு வரவேற்கிறோம்</h3><p>மட்டக்களப்பு மற்றும் இலங்கையின் நம்பகமான செய்திகளை இங்கே வெளியிடலாம்.</p><p class="meta">தொடக்கச் செய்தி</p></div></article>
-<article class="card"><div class="card-body"><span class="category">மட்டக்களப்பு</span><h3>உள்ளூர் செய்திகளை இங்கே சேர்க்கலாம்</h3><p>சரிபார்க்கப்பட்ட செய்தி, புகைப்படம், தேதி மற்றும் செய்தி மூலத்தைப் பின்னர் இணைக்கலாம்.</p><p class="meta">மாதிரி பகுதி</p></div></article>
-</div></section>
-<section id="local" style="margin-top:28px"><h2 class="section-title">📍 மட்டக்களப்பு செய்திகள்</h2><p>மட்டக்களப்பு மாவட்டச் செய்திகள் இந்தப் பகுதியில் காட்டப்படும்.</p></section>
-<section id="island" style="margin-top:20px"><h2 class="section-title">🇱🇰 இலங்கை செய்திகள்</h2><p>இலங்கை முழுவதிலுமிருந்து சரிபார்க்கப்பட்ட செய்திகளை இங்கே சேர்க்கலாம்.</p></section>
-<section id="world" style="margin-top:20px"><h2 class="section-title">🌍 உலகச் செய்திகள்</h2><p>உலகச் செய்திகளை இங்கே சேர்க்கலாம்.</p></section>
-<section id="about" style="margin-top:20px"><h2 class="section-title">ℹ️ எங்களைப் பற்றி</h2><p>NTDS Batticaloa News — செய்திகளைப் பொறுப்புடன் பகிர்வதற்கான ஆரம்ப இணையதள வடிவமைப்பு.</p></section>
-<section class="admin" id="add-news"><h2 class="section-title">✍️ செய்தி மாதிரி சேர்க்கும் பகுதி</h2>
-<p class="admin-note">இந்தப் படிவம் உங்கள் தற்போதைய உலாவியில் மட்டும் செய்தியை முன்னோட்டமாகக் காட்டும். மற்றவர்களுக்கு நிரந்தரமாக வெளியிடவோ, எல்லா சாதனங்களிலும் பகிரவோ முடியாது. அதற்கு தனி நிர்வாக அமைப்பு தேவை.</p>
-<form id="news-form"><label for="title">செய்தித் தலைப்பு</label><input id="title" required maxlength="180" placeholder="செய்தித் தலைப்பை எழுதுங்கள்">
-<label for="category">செய்தி வகை</label><select id="category"><option>மட்டக்களப்பு</option><option>இலங்கை</option><option>உலகம்</option><option>விளையாட்டு</option><option>கல்வி</option><option>பிற செய்திகள்</option></select>
-<label for="body">செய்தி விவரம்</label><textarea id="body" required maxlength="5000" placeholder="செய்தியின் விவரத்தை எழுதுங்கள்"></textarea>
-<label for="source">செய்தி மூலம் / இணைப்பு (விருப்பம்)</label><input id="source" placeholder="மூலத்தின் பெயர் அல்லது இணைய இணைப்பு">
-<div class="admin-actions"><button class="btn" type="submit">முன்னோட்டத்தில் சேர்க்கவும்</button><button class="btn secondary" type="button" id="clear">முன்னோட்டத்தை மீட்டமைக்கவும்</button></div></form><p class="admin-note" id="status" role="status" aria-live="polite"></p></section>
-</main><footer><div class="wrap">© <span id="year"></span> NTDS Batticaloa News · செய்திகளை வெளியிடுவதற்கு முன் சரிபார்க்கவும்.</div></footer>
-<script>
-document.getElementById('year').textContent=new Date().getFullYear();const list=document.getElementById('news-list');const initial=list.innerHTML;
-document.getElementById('news-form').addEventListener('submit',function(e){e.preventDefault();const title=document.getElementById('title').value.trim(),category=document.getElementById('category').value,body=document.getElementById('body').value.trim(),source=document.getElementById('source').value.trim();if(!title||!body)return;
-const card=document.createElement('article');card.className='card';const inner=document.createElement('div');inner.className='card-body';const tag=document.createElement('span');tag.className='category';tag.textContent=category;const h=document.createElement('h3');h.textContent=title;const p=document.createElement('p');p.textContent=body;const meta=document.createElement('p');meta.className='meta';meta.textContent=new Date().toLocaleDateString('ta-LK')+(source?' · மூலம்: '+source:'');inner.append(tag,h,p,meta);card.append(inner);list.prepend(card);document.getElementById('status').textContent='செய்தி இந்தப் பக்கத்தின் முன்னோட்டத்தில் சேர்க்கப்பட்டது. இது நிரந்தரமாக வெளியிடப்படவில்லை.';this.reset();});
-document.getElementById('clear').addEventListener('click',function(){list.innerHTML=initial;document.getElementById('status').textContent='முன்னோட்டம் மீட்டமைக்கப்பட்டது.';});
-</script></body></html>
+<header>
+  <div class="logo">NTDS</div>
+  <h1>மட்டக்களப்பு செய்திகள்</h1>
+  <p>NTDS Batticaloa News — உங்கள் ஊர், உங்கள் செய்திகள்</p>
+</header>
+
+<nav>
+  <a href="#home">முகப்பு</a>
+  <a href="#local">மட்டக்களப்பு</a>
+  <a href="#srilanka">இலங்கை</a>
+  <a href="#education">கல்வி</a>
+  <a href="#sports">விளையாட்டு</a>
+</nav>
+
+<div class="container" id="home">
+  <div class="breaking">📰 தமிழ் செய்திகள் — NTDS Batticaloa News</div>
+
+  <h2>முக்கிய அறிவிப்பு</h2>
+  <div class="feature">
+    <h3>மட்டக்களப்பின் புதிய செய்திகளை இங்கே வெளியிடுங்கள்</h3>
+    <p>உங்கள் ஊரின் உறுதிப்படுத்தப்பட்ட செய்திகள், அறிவிப்புகள் மற்றும் முக்கிய தகவல்களை வாசகர்களுடன் பகிரும் தளம்.</p>
+    <small>செய்திகளை வெளியிடுவதற்கு முன் தகவல்களைச் சரிபார்க்கவும்.</small>
+  </div>
+
+  <h2 id="local">மட்டக்களப்பு செய்திகள்</h2>
+  <div class="cards">
+    <article class="card">
+      <span class="tag">உள்ளூர் செய்திகள்</span>
+      <h3>மட்டக்களப்பு மாவட்டம்</h3>
+      <p>மாவட்டத்தின் புதிய செய்திகளையும் உள்ளூர் அறிவிப்புகளையும் இங்கே சேர்க்கலாம்.</p>
+    </article>
+    <article class="card">
+      <span class="tag">சமூகம்</span>
+      <h3>மக்கள் செய்திகள்</h3>
+      <p>சமூக நிகழ்வுகள், பொதுமக்கள் அறிவிப்புகள் மற்றும் முக்கிய தகவல்கள்.</p>
+    </article>
+  </div>
+
+  <h2 id="srilanka">இலங்கை செய்திகள்</h2>
+  <div class="cards">
+    <article class="card">
+      <h3>தேசிய செய்திகள்</h3>
+      <p>இலங்கையின் உறுதிப்படுத்தப்பட்ட புதிய செய்திகளை இங்கே சேர்க்கலாம்.</p>
+    </article>
+  </div>
+
+  <h2 id="education">கல்விச் செய்திகள்</h2>
+  <div class="cards">
+    <article class="card">
+      <h3>கல்வி மற்றும் பரீட்சைகள்</h3>
+      <p>பாடசாலை அறிவிப்புகள், பரீட்சைத் தகவல்கள் மற்றும் கல்விச் செய்திகள்.</p>
+    </article>
+  </div>
+
+  <h2 id="sports">விளையாட்டுச் செய்திகள்</h2>
+  <div class="cards">
+    <article class="card">
+      <h3>விளையாட்டு உலகம்</h3>
+      <p>உள்ளூர் மற்றும் தேசிய விளையாட்டுச் செய்திகளை இங்கே சேர்க்கலாம்.</p>
+    </article>
+  </div>
+</div>
+
+<footer>
+  <strong>NTDS Batticaloa News</strong>
+  <p>உண்மையான செய்திகள் • நம்பகமான தகவல்கள்</p>
+  <small>© 2026 NTDS Batticaloa News</small>
+</footer>
+</body>
+</html>
